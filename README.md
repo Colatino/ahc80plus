@@ -2,13 +2,11 @@
 
 This is a simple Python library that uses PySerial to read temperatures (dry and wet bulbs) and relative humidity from a **FullGauge AHC 80 plus controller**.
 
-# Instalation
+**Instalation**
 
 Just copy the [library](./ahc80plus.py) to your project folder
 
-# Usage
-
-**Code**
+**Usage**
 ```python
   from ahc80plus import AHC80plus
   
@@ -19,8 +17,7 @@ Just copy the [library](./ahc80plus.py) to your project folder
   print("Wet temperature",ahc80.t_wet,'°C')
   print("Relative Humidity",ahc80.r_h,'%')
 ```
-
-**Output**
+*Output*
 ```
    Dry temperature 27.1 °C
    Wet temperature 26.8 °C
