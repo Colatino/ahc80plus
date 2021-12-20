@@ -4,7 +4,7 @@ This is a simple Python library that uses PySerial to read temperatures (dry and
 
 # Instalation
 
-Just copy the *ahc80plus.py* file inside your project folder
+Just copy the [library](./ahc80plus.py) to your project folder
 
 # Usage example
 
