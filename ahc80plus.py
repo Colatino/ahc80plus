@@ -15,9 +15,9 @@ class AHC80plus:
             self._read=[]
             self._timeout=timeout
             self._read_success=False
-            self.td=0
-            self.tw=0
-            self.umi=0
+            self.t_dry=0
+            self.t_wet=0
+            self.r_h=0
             self.start()
         
     def start(self):
