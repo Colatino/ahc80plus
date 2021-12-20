@@ -24,7 +24,7 @@ Just copy the [library](./ahc80plus.py) to your project folder
 
 # FullGauge AHC 80 plus
 
-[FullGauge's AHC 80 plus](https://www.fullgauge.com.br/produto-ahc-80-plus) is a relative humidity controller based on the principle of [Psychrometry](https://en.wikipedia.org/wiki/Psychrometrics). Very useful if you want to monitor and control the conditions of a high moisture content room like a concrete sample curing room, for example, where electronic humidity sensors just won't work reliably or are very expensive.
+[FullGauge's AHC 80 plus](https://www.fullgauge.com.br/produto-ahc-80-plus) is a relative humidity controller based on the principle of [Psychrometry](https://en.wikipedia.org/wiki/Psychrometrics). Very useful if you want to monitor and control the conditions of a high moisture content room, like a concrete sample curing room, where electronic humidity sensors just won't work reliably or are very expensive due to condensation.
 
 # Dependencies
 This code depends on the [PySerial](https://pyserial.readthedocs.io/en/latest/index.html#) library
