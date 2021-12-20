@@ -1,6 +1,7 @@
 import serial,time
 
 class AHC80plus:
+    # Takes the address, port number and timeout (in seconds)
     def __init__(self,address,port,timeout):
         _success=True
         if address<=0 or address>=247:
@@ -8,7 +9,7 @@ class AHC80plus:
             _success=False
         if timeout<0:
             print('Timeout must be >= 0 s')
-            _success=False
+            _success=False        
         if _success:
             self._add=address
             self._port=port        
@@ -18,17 +19,16 @@ class AHC80plus:
             self.t_dry=0
             self.t_wet=0
             self.r_h=0
-            self.start()
-        
-    def start(self):
-        try:
-            self._instrument=serial.Serial(self._port,28800,parity='M')
-            self.read()
-        except ValueError as e:            
-            print(e)
-        except serial.SerialException as e:            
-            print(e)
-        
+            # If everything is ok starts the Serial and do the first reading
+            try:
+                self._instrument=serial.Serial(self._port,28800,parity='M')
+                self.read()
+            except ValueError as e:            
+                print(e)
+            except serial.SerialException as e:            
+                print(e)
+    
+    #Perform a reading
     def read(self):
         if not self._instrument.is_open:
             self._instrument.open()
