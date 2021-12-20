@@ -6,20 +6,25 @@ This is a simple Python library that uses PySerial to read temperatures (dry and
 
 Just copy the [library](./ahc80plus.py) to your project folder
 
-# Usage example
+# Usage
 
 **Code**
 ```python
   from ahc80plus import AHC80plus
   
+  # AHC80plus(address,serial_port,timeout_s)
   ahc80=AHC80plus(1,'COM3',1)
   ahc80.read()
-  print("Dry temp",ahc80.t_dry,"Wet temp",ahc80.t_wet,"Rel. Hum",ahc80.r_h)  
+  print("Dry temperature",ahc80.t_dry,'°C')
+  print("Wet temperature",ahc80.t_wet,'°C')
+  print("Relative Humidity",ahc80.r_h,'%')
 ```
 
 **Output**
 ```
-   Dry temp 27.1 Wet temp 26.8 Rel. Hum 97.0
+   Dry temperature 27.1 °C
+   Wet temperature 26.8 °C
+   Relative Humidity 97.0 %
 ```
 
 # FullGauge AHC 80 plus
