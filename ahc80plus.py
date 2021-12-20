@@ -49,9 +49,7 @@ class AHC80plus:
             self._read=list(self._instrument.read(self._instrument.in_waiting))
             self._read_success=True
             r=self._read
-            self.td=(256*r[8]+r[9])/10
-            self.tw=(256*r[10]+r[11])/10
-            self.umi=(256*r[12]+r[13])/10
+            self.t_dry=(256*r[8]+r[9])/10
+            self.t_wet=(256*r[10]+r[11])/10
+            self.r_h=(256*r[12]+r[13])/10
         self._instrument.close()
-        
-ahc80=AHC80plus(1,'COM3',1)
