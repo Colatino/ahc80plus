@@ -1,6 +1,6 @@
 # The library
 
-This is a simple Python library that uses PySerial to read temperatures (dry and wet bulbs) and relative humidity from a [FullGauge AHC 80 plus](https://www.fullgauge.com.br/produto-ahc-80-plus) controller.
+This is a simple Python library that uses serial communication via RS485 to read temperatures (dry and wet bulbs) and relative humidity from a [FullGauge AHC 80 plus](https://www.fullgauge.com.br/produto-ahc-80-plus) controller.
 
 **Instalation**
 
